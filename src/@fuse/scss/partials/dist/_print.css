@@ -1,0 +1,62 @@
+/*----------------------------------------------------------------*/
+/*  Print
+/*----------------------------------------------------------------*/
+@media all {
+  /* Never show page breaks in normal view */
+  .page-break-after,
+.page-break-before {
+    display: none;
+  }
+}
+@media print {
+  /* html and body tweaks */
+  html, body {
+    height: auto !important;
+    overflow: initial !important;
+  }
+
+  /* Page breaks */
+  .page-break-after {
+    display: block;
+    page-break-after: always;
+    position: relative;
+  }
+
+  .page-break-before {
+    display: block;
+    page-break-before: always;
+    position: relative;
+  }
+
+  /* General styles */
+  app fuse-sidebar,
+app navbar,
+app toolbar,
+app footer,
+app .theme-options-button,
+app fuse-theme-options,
+app .ps > .ps__rail-x,
+app .ps > .ps__rail-y {
+    display: none !important;
+  }
+  app #main,
+app #container-1,
+app #container-2,
+app #container-3 {
+    padding: 0 !important;
+  }
+  app .ps {
+    overflow: visible !important;
+  }
+  app .mat-drawer-container,
+app .mat-sidenav-container {
+    background-color: white !important;
+  }
+  app .mat-drawer-container .mat-drawer-content,
+app .mat-drawer-container .mat-sidenav-content,
+app .mat-sidenav-container .mat-drawer-content,
+app .mat-sidenav-container .mat-sidenav-content {
+    overflow: initial !important;
+    height: auto !important;
+  }
+}

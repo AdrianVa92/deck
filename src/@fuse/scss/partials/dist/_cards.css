@@ -1,0 +1,40 @@
+.fuse-card {
+  max-width: 320px;
+  min-width: 320px;
+  border-radius: 8px;
+  border: 1px solid;
+}
+.fuse-card.variable-width {
+  min-width: 0;
+}
+.fuse-card.auto-width {
+  min-width: 0;
+  max-width: none;
+}
+.fuse-card .mat-button {
+  min-width: 0 !important;
+  padding: 0 8px !important;
+}
+.fuse-card .mat-button-toggle-group,
+.fuse-card .mat-button-toggle-standalone {
+  box-shadow: none !important;
+}
+.fuse-card .mat-tab-labels {
+  justify-content: center;
+}
+.fuse-card .mat-tab-label {
+  min-width: 0 !important;
+}
+.fuse-card .card-divider {
+  margin: 16px;
+}
+.fuse-card .card-divider.full-width {
+  margin: 0;
+}
+.fuse-card .card-expand-area {
+  overflow: hidden;
+}
+.fuse-card .card-expand-area .card-expanded-content {
+  padding: 8px 16px 16px 16px;
+  line-height: 1.75;
+}

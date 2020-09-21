@@ -1,0 +1,17 @@
+.folded:not(.unfolded) :host .nav-link > span {
+  opacity: 0;
+  transition: opacity 200ms ease;
+}
+.folded:not(.unfolded) :host.open .children {
+  display: none !important;
+}
+:host .nav-link .collapsable-arrow {
+  transition: transform 0.3s ease-in-out, opacity 0.25s ease-in-out 0.1s;
+  transform: rotate(0);
+}
+:host > .children {
+  overflow: hidden;
+}
+:host.open > .nav-link .collapsable-arrow {
+  transform: rotate(90deg);
+}

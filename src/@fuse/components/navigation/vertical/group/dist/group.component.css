@@ -1,0 +1,15 @@
+.folded:not(.unfolded) :host > .group-title {
+  align-items: center;
+}
+.folded:not(.unfolded) :host > .group-title > span {
+  opacity: 0;
+  transition: opacity 200ms ease;
+}
+.folded:not(.unfolded) :host > .group-title:before {
+  content: "";
+  display: block;
+  position: absolute;
+  min-width: 1.6rem;
+  border-top: 2px solid;
+  opacity: 0.2;
+}

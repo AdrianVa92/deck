@@ -1,0 +1,10 @@
+.ps {
+  position: relative;
+}
+.ps > .ps__rail-x {
+  z-index: 99999;
+}
+.ps > .ps__rail-y {
+  z-index: 99999;
+  left: auto !important;
+}
