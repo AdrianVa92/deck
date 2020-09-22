@@ -1,16 +1,19 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppComponent } from './app.component';
+import { FooterComponent } from './shared/footer/footer.component';
+import { BannerComponent } from './shared/banner/banner.component';
+
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
   imports: [
-    BrowserModule
+    BrowserModule,
   ],
-  providers: [],
+  declarations: [
+    AppComponent,
+    FooterComponent,
+    BannerComponent
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
