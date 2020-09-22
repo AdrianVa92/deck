@@ -1,0 +1,48 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VEVENT
+DTSTART:20200911T004500Z
+DTEND:20200911T024500Z
+DTSTAMP:20200910T235343Z
+ORGANIZER;CN=Ma. Lourdes Tiglao:mailto:lourdest@cloudstaff.com
+UID:56vldqnicqfbdkn4dkp1qfq30t@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;RSVP=TRUE
+ ;CN=Ma. Lourdes Tiglao;X-NUM-GUESTS=0:mailto:lourdest@cloudstaff.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=iana@cloudstaff.com;X-NUM-GUESTS=0:mailto:iana@cloudstaff.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=adrianva@cloudstaff.com;X-NUM-GUESTS=0:mailto:adrianva@cloudstaff.c
+ om
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=patriciav@cloudstaff.com;X-NUM-GUESTS=0:mailto:patriciav@cloudstaff
+ .com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=jaymarkd@cloudstaff.com;X-NUM-GUESTS=0:mailto:jaymarkd@cloudstaff.c
+ om
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=Rheinfalz Musni;X-NUM-GUESTS=0:mailto:rheinfalzm@cloudstaff.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=matthewb@cloudstaff.com;X-NUM-GUESTS=0:mailto:matthewb@cloudstaff.c
+ om
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=carloco@cloudstaff.com;X-NUM-GUESTS=0:mailto:carloco@cloudstaff.com
+X-MICROSOFT-CDO-OWNERAPPTID:800085433
+CREATED:20200910T235301Z
+DESCRIPTION:-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~::~:~::-\nPlease do not edit this section of the descriptio
+ n.\n\nView your event at https://www.google.com/calendar/event?action=VIEW&
+ eid=NTZ2bGRxbmljcWZiZGtuNGRrcDFxZnEzMHQgYWRyaWFudmFAY2xvdWRzdGFmZi5jb20&tok
+ =MjMjbG91cmRlc3RAY2xvdWRzdGFmZi5jb203OGE1ZTY5OGVmNTgxNzA5YzYyMWI4Yjk0NDY1Mz
+ hhNjEzYWQwMjg2&ctz=Asia%2FHong_Kong&hl=en&es=1.\n-::~:~::~:~:~:~:~:~:~:~:~:
+ ~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-
+LAST-MODIFIED:20200910T235340Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Sprint Review/Reto/Planning
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR
