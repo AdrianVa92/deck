@@ -1,5 +1,9 @@
+import { HeaderComponent } from './shared/header/header.component';
+import { SidebarComponent } from './shared/sidebar/sidebar.component';
+import { InnerFooterComponent } from './shared/inner-footer/inner-footer.component';
+import { FooterComponent } from './shared/footer/footer.component';
+import { BannerComponent } from './shared/banner/banner.component';
 import { TwopageModule } from './twopage/twopage.module';
-import { LandingModule } from './landing/landing.module';
 import { LandingComponent } from './landing/landing.component';
 import { FullModule } from './full/full.module';
 import { BrowserModule } from '@angular/platform-browser';
@@ -18,6 +22,7 @@ import { TwopageComponent } from './twopage/twopage.component';
 @NgModule({
   declarations: [
     AppComponent,
+    LandingComponent,
     MacquarieTodayComponent,
     StaffOverviewComponent,
     StaffSummaryComponent,
@@ -27,6 +32,11 @@ import { TwopageComponent } from './twopage/twopage.component';
     ApplicationLibraryListComponent,
     ApplicationLibraryGridComponent,
     TwopageComponent,
+    BannerComponent,
+    FooterComponent,
+    HeaderComponent,
+    InnerFooterComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
