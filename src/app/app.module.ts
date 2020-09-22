@@ -33,7 +33,6 @@ import { TwopageComponent } from './twopage/twopage.component';
     FullModule,
     TwopageModule
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
