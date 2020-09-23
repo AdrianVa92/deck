@@ -1,11 +1,11 @@
-<header id="inner-header">
+<header id="inner-header" ngif>
   <div class="container">
     <div class="row py-4">
       <div class="col-md-8 col-12">
         <h1>{{title}}</h1>
         
       </div>
-      <div class="col-md-4 col-12">
+      <div class="col-md-4 col-12" hidden="{{page}}">
         <div class="col-12">
           <div class="row">
             <input class="form-control w-100 rounded-0 col-10" id="myInput" type="text" placeholder="Find Apps">

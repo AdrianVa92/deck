@@ -1,7 +1,7 @@
 <footer class="container-fluid">
   <div class="row">
     <div class="col-md-10 col-6 d-flex align-items-center flex-nowrap">
-      <a class="logo" routerLink="/staff-summary-list" style="text-align: center;">
+      <a class="logo" routerLink="/staff-overview" style="text-align: center;">
         <img src="assets/images/common/macquarie.png" alt="Cloudstaff"
           style="width: 100%; max-width: 65px; box-sizing:border-box; padding: 15px 10px 10px 10px ">
         <span style="display: block;">ALL TEAM <i class="arrow down"></i></span>
@@ -10,31 +10,32 @@
       <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
       <ul class="nav menu d-flex flex-nowrap">
         <li class="nav-item">
-          <a class="nav-link active" [routerLink]="['/']" style="text-align: center;">
+          <a class="nav-link" [routerLinkActive]="['active']"
+            style="text-align: center;">
             <img src="assets/images/common/nav-icon1.png" alt="Launch pad" style="width: 100%; max-width: 65px;">
             <span style="display: block;">LAUNCH PAD</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/macquarie-today']" style="text-align: center;">
+          <a class="nav-link" [routerLink]="['/macquarie-today']" [routerLinkActive]="['active']" style="text-align: center;">
             <img src="assets/images/common/inner-header/today.svg" alt="Openings" style="width: 100%; max-width: 65px;">
             <span style="display: block;">TODAY</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/staff-overview-list']" style="text-align: center;">
+          <a class="nav-link" [routerLink]="['/staff-summary']" [routerLinkActive]="['active']" style="text-align: center;">
             <img src="assets/images/common/inner-header/team.svg" alt="Team" style="width: 100%; max-width: 65px;">
             <span style="display: block;">TEAM</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/application-library']" style="text-align: center;">
+          <a class="nav-link" [routerLink]="['/application-library']" [routerLinkActive]="['active']" style="text-align: center;">
             <img src="assets/images/common/inner-header/activities.svg" alt="My Resume"
               style="width: 100%; max-width: 65px;">
             <span style="display: block;">ACTIVITIES</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" [routerLink]="['marketplace']" style="text-align: center;">
+          <a class="nav-link" [routerLink]="['marketplace']" [routerLinkActive]="['active']" style="text-align: center;">
             <img src="assets/images/common/inner-header/marketplace.jpg" alt="My Profile"
               style="width: 100%; max-width: 65px;">
             <span style="display: block;">Marketplace</span>
@@ -52,7 +53,7 @@
           </a>
         </li>
         <li>
-          <a href="index.php" style="text-align: center;max-width: 125px;margin: 0 0 0 auto;">
+          <a [routerLink]="['/']" style=" text-align: center;max-width: 125px;margin: 0 0 0 auto;">
             <img src="assets/images/common/inner-header/flight-deck.jpg" alt="My Profile"
               style="width: 100%; max-width: 65px;">
             <span style="display: block;">FLIGHT DECK</span>

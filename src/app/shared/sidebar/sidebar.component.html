@@ -1,87 +1,202 @@
-<h4>APP ASSIGNMENTS</h4>
-<ul class="list-checkbox">
-  <li>
-    <label class="checkbox">
-      <input type="checkbox" id="checkbox" />
-      <span class="check-text">Everyone</span>
-      <span class="checkmark"></span>
-    </label>
-  <li>
-  <li>
-    <label class="checkbox">
-      <input type="checkbox" id="checkbox" />
-      <span class="check-text">Managers</span>
-      <span class="checkmark"></span>
-    </label>
-  <li>
-  <li>
-    <label class="checkbox">
-      <input type="checkbox" id="checkbox" />
-      <span class="check-text">Team Leads</span>
-      <span class="checkmark"></span>
-    </label>
-  <li>
-  <li>
-    <label class="checkbox">
-      <input type="checkbox" id="checkbox" />
-      <span class="check-text">Sales</span>
-      <span class="checkmark"></span>
-    </label>
-  <li>
-  <li>
-    <label class="checkbox">
-      <input type="checkbox" id="checkbox" />
-      <span class="check-text">Sales Admin</span>
-      <span class="checkmark"></span>
-    </label>
-  <li>
-  <li>
-    <label class="checkbox">
-      <input type="checkbox" id="checkbox" />
-      <span class="check-text">Collections</span>
-      <span class="checkmark"></span>
-    </label>
-  <li>
-  <li>
-    <label class="checkbox">
-      <input type="checkbox" id="checkbox" />
-      <span class="check-text">Applications & Leases</span>
-      <span class="checkmark"></span>
-    </label>
-  <li>
-  <li>
-    <label class="checkbox"> <span class="check-text">Lease Renewals</span>
-      <input type="checkbox" id="checkbox" />
-      <span class="checkmark"></span>
-    </label>
-  <li>
-  <li>
-    <label class="checkbox"> <span class="check-text">Repairs & Maintenace</span>
-      <input type="checkbox" id="checkbox" />
-      <span class="checkmark"></span>
-    </label>
-  <li>
-  <li>
-    <label class="checkbox"> <span class="check-text">Inspections</span>
-      <input type="checkbox" id="checkbox" />
-      <span class="checkmark"></span>
-    </label>
-  <li>
-  <li>
-    <label class="checkbox"> <span class="check-text">Marketing & Creative</span>
-      <input type="checkbox" id="checkbox" />
-      <span class="checkmark"></span>
-    </label>
-  <li>
-  <li>
-    <label class="checkbox"> <span class="check-text">Finance</span>
-      <input type="checkbox" id="checkbox" />
-      <span class="checkmark"></span>
-    </label>
-  <li>
-</ul>
-<h4>MANAGE</h4>
-<ul>
-  <li>App Categories</li>
-  <li>Add new app</li>
-</ul>
+<!-- Staff Application Library -->
+<div *ngIf="router.indexOf('/application-library') > -1">
+  <h4>APP ASSIGNMENTS</h4>
+  <ul class="list-checkbox">
+    <li>
+      <label class="checkbox">
+        <input type="checkbox" id="checkbox" />
+        <span class="check-text">Everyone</span>
+        <span class="checkmark"></span>
+      </label>
+    <li>
+    <li>
+      <label class="checkbox">
+        <input type="checkbox" id="checkbox" />
+        <span class="check-text">Managers</span>
+        <span class="checkmark"></span>
+      </label>
+    <li>
+    <li>
+      <label class="checkbox">
+        <input type="checkbox" id="checkbox" />
+        <span class="check-text">Team Leads</span>
+        <span class="checkmark"></span>
+      </label>
+    <li>
+    <li>
+      <label class="checkbox">
+        <input type="checkbox" id="checkbox" />
+        <span class="check-text">Sales</span>
+        <span class="checkmark"></span>
+      </label>
+    <li>
+    <li>
+      <label class="checkbox">
+        <input type="checkbox" id="checkbox" />
+        <span class="check-text">Sales Admin</span>
+        <span class="checkmark"></span>
+      </label>
+    <li>
+    <li>
+      <label class="checkbox">
+        <input type="checkbox" id="checkbox" />
+        <span class="check-text">Collections</span>
+        <span class="checkmark"></span>
+      </label>
+    <li>
+    <li>
+      <label class="checkbox">
+        <input type="checkbox" id="checkbox" />
+        <span class="check-text">Applications & Leases</span>
+        <span class="checkmark"></span>
+      </label>
+    <li>
+    <li>
+      <label class="checkbox"> <span class="check-text">Lease Renewals</span>
+        <input type="checkbox" id="checkbox" />
+        <span class="checkmark"></span>
+      </label>
+    <li>
+    <li>
+      <label class="checkbox"> <span class="check-text">Repairs & Maintenace</span>
+        <input type="checkbox" id="checkbox" />
+        <span class="checkmark"></span>
+      </label>
+    <li>
+    <li>
+      <label class="checkbox"> <span class="check-text">Inspections</span>
+        <input type="checkbox" id="checkbox" />
+        <span class="checkmark"></span>
+      </label>
+    <li>
+    <li>
+      <label class="checkbox"> <span class="check-text">Marketing & Creative</span>
+        <input type="checkbox" id="checkbox" />
+        <span class="checkmark"></span>
+      </label>
+    <li>
+    <li>
+      <label class="checkbox"> <span class="check-text">Finance</span>
+        <input type="checkbox" id="checkbox" />
+        <span class="checkmark"></span>
+      </label>
+    <li>
+  </ul>
+  <h4>MANAGE</h4>
+  <ul>
+    <li>App Categories</li>
+    <li>Add new app</li>
+  </ul>
+</div>
+<!-- Staff Overview Page -->
+<div *ngIf="router.indexOf('/staff-overview') > -1">
+  <h4>MACQUARIE TEAMS</h4>
+  <ul>
+    <li>Sales support</li>
+    <li>Research</li>
+    <li>Data entry</li>
+    <li>Property reports</li>
+    <li>Collections</li>
+    <li>Compliance</li>
+  </ul>
+  <h4>MANAGE</h4>
+  <ul>
+    <li>Team summary</li>
+    <li>Manage teams</li>
+    <li>Create team</li>
+  </ul>
+  <div class="btn btn-primary">Add Staff</div>
+</div>
+<!-- Staff Summary Page -->
+<div *ngIf="router.indexOf('/staff-summary') > -1">
+  <h4>TEAM FILTER <span class="arrow up"></span></h4>
+  <ul class="list-checkbox">
+    <li>
+      <label class="checkbox">
+        <input type="checkbox" id="checkbox" />
+        <span class="check-text">Everyone</span>
+        <span class="checkmark"></span>
+      </label>
+    <li>
+    <li>
+      <label class="checkbox">
+        <input type="checkbox" id="checkbox" />
+        <span class="check-text">Managers</span>
+        <span class="checkmark"></span>
+      </label>
+    <li>
+    <li>
+      <label class="checkbox">
+        <input type="checkbox" id="checkbox" />
+        <span class="check-text">Team Leads</span>
+        <span class="checkmark"></span>
+      </label>
+    <li>
+    <li>
+      <label class="checkbox">
+        <input type="checkbox" id="checkbox" />
+        <span class="check-text">Sales</span>
+        <span class="checkmark"></span>
+      </label>
+    <li>
+    <li>
+      <label class="checkbox">
+        <input type="checkbox" id="checkbox" />
+        <span class="check-text">Sales Admin</span>
+        <span class="checkmark"></span>
+      </label>
+    <li>
+    <li>
+      <label class="checkbox">
+        <input type="checkbox" id="checkbox" />
+        <span class="check-text">Collections</span>
+        <span class="checkmark"></span>
+      </label>
+    <li>
+    <li>
+      <label class="checkbox">
+        <input type="checkbox" id="checkbox" />
+        <span class="check-text">Applications & Leases</span>
+        <span class="checkmark"></span>
+      </label>
+    <li>
+    <li>
+      <label class="checkbox">
+        <input type="checkbox" id="checkbox" />
+        <span class="check-text">Lease Renewals</span>
+        <span class="checkmark"></span>
+      </label>
+    <li>
+    <li>
+      <label class="checkbox">
+        <input type="checkbox" id="checkbox" />
+        <span class="check-text">Repairs & Maintenace</span>
+        <span class="checkmark"></span>
+      </label>
+    <li>
+    <li>
+      <label class="checkbox">
+        <input type="checkbox" id="checkbox" />
+        <span class="check-text">Inspections</span>
+        <span class="checkmark"></span>
+      </label>
+    <li>
+    <li>
+      <label class="checkbox">
+        <input type="checkbox" id="checkbox" />
+        <span class="check-text">Marketing & Creative</span>
+        <span class="checkmark"></span>
+      </label>
+    <li>
+    <li>
+      <label class="checkbox">
+        <input type="checkbox" id="checkbox" />
+        <span class="check-text">Finance</span>
+        <span class="checkmark"></span>
+      </label>
+    <li>
+  </ul>
+  <h4>STATUS FILTER <span class="arrow down"></span></h4>
+  <h4>LOCATION FILTER <span class="arrow down"></span></h4>
+
+</div>
