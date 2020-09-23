@@ -17,7 +17,7 @@ export class HeaderComponent implements OnInit {
       this.title = "Application Library";
     }
     if (this.router.url.indexOf('/staff-summary') > -1) {
-      this.title = "Staff Summery";
+      this.title = "Staff Summary";
     }
     if (this.router.url.indexOf('/staff-overview') > -1) {
       this.title = "Staff Overview";
