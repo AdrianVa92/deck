@@ -37,8 +37,17 @@
   </div>
 </header>    --->
 <app-header></app-header>
+
 <div class="content content__inner">
   <div class="container">
+    <ul class="nav inner-tab">
+      <li class="nav-item">
+        <a routerLink="/application-library" routerLinkActive="active">Grid</a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="/application-library/list" routerLinkActive="active">List</a>
+      </li>
+    </ul>
     <div class="d-flex row">
       <div class="col-md-10 col-12 order-md-2">
         <router-outlet></router-outlet>

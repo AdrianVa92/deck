@@ -1,9 +1,5 @@
 <!--Header-->
-<div class="content content__inner">
-  <div class="container">
-      <div class="d-flex row">
-          <div class="col-md-10 col-12 order-md-2">
-        <!----    <table class="table team-table">
+<!----    <table class="table team-table">
                   <thead>
                       <tr>
                           <th scope="col"></th>
@@ -65,45 +61,39 @@
                       </tr>
                   </tbody>
               </table>  -->
-              <table mat-table [dataSource]="dataSource" class="table team-table">
-                <ng-container matColumnDef= "image">
-                  <th mat-header-cell *matHeaderCellDef></th>
-                  <td scope="col"  class="align-middle" mat-cell *matCellDef="let team"> <img src =  "{{ team.image || 'My Staff' }}">  </td>
-                </ng-container>
+<table mat-table [dataSource]="dataSource" class="table team-table">
+  <ng-container matColumnDef="image">
+    <th mat-header-cell *matHeaderCellDef></th>
+    <td scope="col" class="align-middle" mat-cell *matCellDef="let team"> <img src="{{ team.image || 'My Staff' }}">
+    </td>
+  </ng-container>
 
-                <ng-container matColumnDef= "app">
-                  <th mat-header-cell *matHeaderCellDef> App </th>
-                  <td scope="col" mat-cell class="align-middle" *matCellDef="let team"> <b> {{ team.app }} </b> <br> Web App </td>
-                </ng-container>
+  <ng-container matColumnDef="app">
+    <th mat-header-cell *matHeaderCellDef> App </th>
+    <td scope="col" mat-cell class="align-middle" *matCellDef="let team"> <b> {{ team.app }} </b> <br> Web App </td>
+  </ng-container>
 
-                <ng-container matColumnDef= "description">
-                  <th mat-header-cell *matHeaderCellDef> Description </th>
-                  <td scope="col" class="align-middle" mat-cell *matCellDef="let team"> {{ team.description }}</td>
-                </ng-container>
+  <ng-container matColumnDef="description">
+    <th mat-header-cell *matHeaderCellDef> Description </th>
+    <td scope="col" class="align-middle" mat-cell *matCellDef="let team"> {{ team.description }}</td>
+  </ng-container>
 
-                <ng-container matColumnDef= "assignments">
-                  <th mat-header-cell *matHeaderCellDef> Assignments </th>
-                  <td scope="col" class="align-middle" mat-cell *matCellDef="let team"> {{ team.assignments }}</td>
-                </ng-container>
+  <ng-container matColumnDef="assignments">
+    <th mat-header-cell *matHeaderCellDef> Assignments </th>
+    <td scope="col" class="align-middle" mat-cell *matCellDef="let team"> {{ team.assignments }}</td>
+  </ng-container>
 
-                <ng-container matColumnDef= "usage">
-                  <th mat-header-cell *matHeaderCellDef> Usage </th>
-                  <td scope="col" class="align-middle" mat-cell *matCellDef="let team"> {{ team.usage }}</td>
-                </ng-container>
+  <ng-container matColumnDef="usage">
+    <th mat-header-cell *matHeaderCellDef> Usage </th>
+    <td scope="col" class="align-middle" mat-cell *matCellDef="let team"> {{ team.usage }}</td>
+  </ng-container>
 
-                <ng-container matColumnDef= "icons">
-                  <th mat-header-cell *matHeaderCellDef>  </th>
-                  <td scope="col" class="text-center align-middle" mat-cell *matCellDef="let team"> <span class="arrow down"></span><img src="{{ team.icons  || humberger }}"></td>
-                </ng-container>
+  <ng-container matColumnDef="icons">
+    <th mat-header-cell *matHeaderCellDef> </th>
+    <td scope="col" class="text-center align-middle" mat-cell *matCellDef="let team"> <span
+        class="arrow down"></span><img src="{{ team.icons  || humberger }}"></td>
+  </ng-container>
 
-                  <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>
-                  <tr mat-row *matRowDef="let row; columns: columnsToDisplay;"></tr>
-              </table>
-          </div>
-          <div class="sidebar col-md-2 col-12 order-md-1">
-
-          </div>
-      </div>
-  </div>
-</div>
-
+  <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>
+  <tr mat-row *matRowDef="let row; columns: columnsToDisplay;"></tr>
+</table>

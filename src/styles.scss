@@ -645,7 +645,22 @@ footer {
 #inner-header{
     box-shadow: 0 0 20px -10px #000;
 }
-
+.inner-tab{
+    display: flex;
+    list-style: none;
+    padding: 0 0 50px;
+    margin: -65px 0 0;
+    a{
+        display: inline-block;
+        box-sizing: border-box;
+        padding: 5px 15px;
+        &.active, &:hover{
+            text-decoration: none;
+            color: #000;
+            border-bottom: 2px solid #000;
+        }
+    }
+}
 
 /* Responsive
 -----------------------------------------------------------------*/

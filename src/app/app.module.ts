@@ -18,6 +18,7 @@ import { ApplicationLibraryComponent } from './application-library/application-l
 import { ApplicationLibraryListComponent } from './application-library/application-library-list/application-library-list.component';
 import { ApplicationLibraryGridComponent } from './application-library/application-library-grid/application-library-grid.component';
 import { TwopageComponent } from './twopage/twopage.component';
+import { MaterialModule } from './../lib/material/material.module';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { TwopageComponent } from './twopage/twopage.component';
   imports: [
     BrowserModule,
     FullModule,
-    TwopageModule
+    TwopageModule,
+    MaterialModule
   ],
   bootstrap: [AppComponent]
 })

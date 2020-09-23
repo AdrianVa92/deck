@@ -556,6 +556,23 @@ footer .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before, footer .menu-
   box-shadow: 0 0 20px -10px #000;
 }
 
+.inner-tab {
+  display: flex;
+  list-style: none;
+  padding: 0 0 50px;
+  margin: -65px 0 0;
+}
+.inner-tab a {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 5px 15px;
+}
+.inner-tab a.active, .inner-tab a:hover {
+  text-decoration: none;
+  color: #000;
+  border-bottom: 2px solid #000;
+}
+
 /* Responsive
 -----------------------------------------------------------------*/
 @media only screen and (max-width: 768px) {
