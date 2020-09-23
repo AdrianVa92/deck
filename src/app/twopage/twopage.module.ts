@@ -12,7 +12,7 @@ import { CommonModule } from '@angular/common';
 
 const routes: Routes = [
   {
-    path: 'app',
+    path: '',
     component: TwopageComponent,
     children: [
       {

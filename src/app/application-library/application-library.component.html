@@ -37,13 +37,15 @@
   </div>
 </header>    --->
 <app-header></app-header>
-<div class="row">
-  <div class="col-md-2 col-3">
-    <div class="sidebar">
-     <app-sidebar></app-sidebar>
-     </div>
+<div class="content content__inner">
+  <div class="container">
+    <div class="d-flex row">
+      <div class="col-md-10 col-12 order-md-2">
+        <router-outlet></router-outlet>
+      </div>
+      <div class="sidebar col-md-2 col-12 order-md-1">
+        <app-sidebar></app-sidebar>
+      </div>
+    </div>
   </div>
-  <div class="col-md-10 col-9">
-    <router-outlet></router-outlet>
-  </div>
- </div>
+</div>
