@@ -13,14 +13,18 @@ var HeaderComponent = /** @class */ (function () {
         this.router = router;
     }
     HeaderComponent.prototype.ngOnInit = function () {
-        if (this.router.url == '/application-library') {
+        if (this.router.url.indexOf('/application-library') > -1) {
             this.title = "Application Library";
         }
-        if (this.router.url == '/staff-summary') {
+        if (this.router.url.indexOf('/staff-summary') > -1) {
             this.title = "Staff Summery";
         }
-        if (this.router.url == '/staff-overview') {
+        if (this.router.url.indexOf('/staff-overview') > -1) {
             this.title = "Staff Overview";
+        }
+        if (this.router.url.indexOf('/macquarie-today') > -1) {
+            this.title = "Macquarie today";
+            this.page = 'true';
         }
     };
     HeaderComponent = __decorate([
