@@ -4,7 +4,7 @@
       <div class="d-flex row container__panel">
           <div class="col-md-12 col-12 order-md-2">
               <h2>Team Activity Summary</h2>
-              <table class="table staff-table">
+          <!---    <table class="table staff-table">
                   <thead>
                       <tr>
                           <th scope="col"><span class="staff-table__image"></span></th>
@@ -79,6 +79,51 @@
                           <td scope="col" class="text-right align-middle">6 years</td>
                       </tr>
                   </tbody>
+              </table>    --->
+              <table mat-table [dataSource]="dataSource" class="table staff-table">
+                <ng-container matColumnDef= "image">
+                  <th mat-header-cell *matHeaderCellDef></th>
+                  <td scope="col"  class="align-middle" mat-cell *matCellDef="let staff"> <span class="staff-table__image active"><img src =  "{{ staff.image || 'staff' }}"> </span> </td>
+                </ng-container>
+
+                <ng-container matColumnDef= "name">
+                  <th mat-header-cell *matHeaderCellDef> Name </th>
+                  <td scope="col" mat-cell class="align-middle" *matCellDef="let staff"> {{ staff.name }}</td>
+                </ng-container>
+
+                <ng-container matColumnDef= "role">
+                  <th mat-header-cell *matHeaderCellDef> Role </th>
+                  <td scope="col" class="align-middle" mat-cell *matCellDef="let staff"> {{ staff.role }}</td>
+                </ng-container>
+
+                <ng-container matColumnDef= "team">
+                  <th mat-header-cell *matHeaderCellDef> Team </th>
+                  <td scope="col" class="align-middle" mat-cell *matCellDef="let staff"> {{ staff.team }}</td>
+                </ng-container>
+
+                <ng-container matColumnDef= "activity">
+                  <th mat-header-cell *matHeaderCellDef> Activity </th>
+                  <td scope="col" class="align-middle" mat-cell *matCellDef="let staff"> {{ staff.activity }}</td>
+                </ng-container>
+
+                <ng-container matColumnDef= "rating">
+                  <th  class="text-center" mat-header-cell *matHeaderCellDef> Rating </th>
+                  <td scope="col" class="align-middle text-center" mat-cell *matCellDef="let staff"> {{ staff.rating }}</td>
+                </ng-container>
+
+
+                <ng-container matColumnDef= "dreampoints">
+                  <th class="text-right" mat-header-cell *matHeaderCellDef> Dreampoints </th>
+                  <td scope="col"  class="align-middle text-right " mat-cell *matCellDef="let staff"> {{ staff.dreampoints }}</td>
+                </ng-container>
+
+                <ng-container matColumnDef= "tenure">
+                  <th class="text-right" mat-header-cell *matHeaderCellDef> Tenure </th>
+                  <td scope="col" class="align-middle text-right " mat-cell *matCellDef="let staff"> {{ staff.tenure }}</td>
+                </ng-container>
+
+                  <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>
+                  <tr mat-row *matRowDef="let row; columns: columnsToDisplay;"></tr>
               </table>
           </div>
       </div>
